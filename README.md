@@ -5,11 +5,16 @@ This script will help you to prevent attacks on your Linux server.
 The most common use of this script is for websites that use ports 80 or 443, etc.
 
 Single: In the file
+
 loop_block_ddoser_ip.sh
 
+
 Before running, change the following values according to your needs.
+
 PORT = "443"
+
 Blocklist_TIME = "3600"
+
 Server_public_ip = "1.2.3.4"
 
 ===========================================================================
