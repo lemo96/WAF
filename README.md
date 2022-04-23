@@ -4,12 +4,13 @@ A simple and powerful script to block DDoS and botnet attacks [Linux / Directadm
 This script will help you to prevent attacks on your Linux server.
 The most common use of this script is for websites that use ports 80 or 443, etc.
 
-Single: In the file
+# How it worked:
+If more than 20 simultaneous connections are made from one IP on port 443, it will block it for 3600 seconds.
 
-loop_block_ddoser_ip.sh
 
+===========================================================================
 
-Before running, change the following values according to your needs.
+Before running, change the following values according to your needs. [edit: loop_block_ddoser_ip.sh]
 
 PORT = "443"
 
@@ -20,8 +21,6 @@ Server_public_ip = "1.2.3.4"
 ===========================================================================
 
 # Setup steps:
-
-
 mkdir -p ~/ddosMigration
 
 cd ~/ddosMigration
@@ -38,5 +37,9 @@ bash loop_block_ddoser_ip.sh
 
 ===========================================================================
 
-# If you want to run the file in the background, you can use the apple command
-screen bash loop_block_ddoser_ip.sh // Install screen tool first
+# If you want to run the file in the background
+yum install -y screen / centos
+
+sudo apt get install screen -y / ubuntu or debian
+
+screen bash loop_block_ddoser_ip.sh 
