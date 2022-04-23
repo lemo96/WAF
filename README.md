@@ -18,7 +18,8 @@ Blocklist_TIME = "3600"
 Server_public_ip = "1.2.3.4"
 
 ===========================================================================
-setup:
+
+# Setup steps:
 
 
 mkdir -p ~/ddosMigration
@@ -36,6 +37,6 @@ or
 bash loop_block_ddoser_ip.sh
 
 ===========================================================================
-If you want to run the file in the background, you can use the apple command
 
+# If you want to run the file in the background, you can use the apple command
 screen bash loop_block_ddoser_ip.sh // Install screen tool first
