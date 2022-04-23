@@ -22,12 +22,17 @@ setup:
 
 
 mkdir -p ~/ddosMigration
+
 cd ~/ddosMigration
+
 wget https://raw.githubusercontent.com/lemo96/WAF/main/loop_block_ddoser_ip.sh
+
 chmod +x loop_block_ddoser_ip.sh
 
 ./loop_block_ddoser_ip.sh
+
 or 
+
 bash loop_block_ddoser_ip.sh
 
 ===========================================================================
